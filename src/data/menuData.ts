@@ -1,0 +1,171 @@
+import type { MenuItem } from "@/types";
+
+export const menuItems: MenuItem[] = [
+  // ============ COFFEE ============
+  {
+    id: 1,
+    name: "Filter Coffee",
+    description: "Traditional South Indian filter coffee",
+    price: 60,
+    category: "coffee",
+    image: "https://images.unsplash.com/photo-1610889556528-9a770e32642f?w=400&q=80",
+  },
+  {
+    id: 2,
+    name: "Cappuccino",
+    description: "Rich espresso with steamed milk foam",
+    price: 150,
+    category: "coffee",
+    image: "https://images.unsplash.com/photo-1572442388796-11668a67e53d?w=400&q=80",
+  },
+  {
+    id: 3,
+    name: "Caramel Latte",
+    description: "Espresso with caramel and milk",
+    price: 180,
+    category: "coffee",
+    image: "https://images.unsplash.com/photo-1485808191679-5f86510681a2?w=400&q=80",
+  },
+  {
+    id: 4,
+    name: "Cold Brew",
+    description: "12-hour slow brewed, smooth and strong",
+    price: 170,
+    category: "coffee",
+    image: "https://images.unsplash.com/photo-1461023058943-07fcbe16d735?w=400&q=80",
+  },
+  {
+    id: 5,
+    name: "Espresso Shot",
+    description: "Pure, intense, and bold",
+    price: 100,
+    category: "coffee",
+    image: "https://images.unsplash.com/photo-1510707577719-ae7c14805e3a?w=400&q=80",
+  },
+  {
+    id: 6,
+    name: "Mocha",
+    description: "Espresso, chocolate, and steamed milk",
+    price: 190,
+    category: "coffee",
+    image: "https://images.unsplash.com/photo-1578314675249-a6910f80cc4e?w=400&q=80",
+  },
+
+  // ============ TEA ============
+  {
+    id: 7,
+    name: "Masala Chai",
+    description: "Spiced Indian tea with ginger",
+    price: 50,
+    category: "tea",
+    image: "https://images.unsplash.com/photo-1564890369478-c89ca6d9cde9?w=400&q=80",
+  },
+  {
+    id: 8,
+    name: "Green Tea",
+    description: "Light and refreshing",
+    price: 70,
+    category: "tea",
+    image: "https://images.unsplash.com/photo-1556881286-fc6915169721?w=400&q=80",
+  },
+  {
+    id: 9,
+    name: "Iced Lemon Tea",
+    description: "Chilled tea with fresh lemon",
+    price: 90,
+    category: "tea",
+    image: "https://images.unsplash.com/photo-1556679343-c7306c1976bc?w=400&q=80",
+  },
+  {
+    id: 10,
+    name: "Matcha Latte",
+    description: "Japanese green tea with milk",
+    price: 160,
+    category: "tea",
+    image: "https://images.unsplash.com/photo-1515823064-d6e0c04616a7?w=400&q=80",
+  },
+
+  // ============ SNACKS ============
+  {
+    id: 11,
+    name: "Veg Sandwich",
+    description: "Grilled sandwich with fresh veggies",
+    price: 120,
+    category: "snacks",
+    image: "https://images.unsplash.com/photo-1528735602780-2552fd46c7af?w=400&q=80",
+  },
+  {
+    id: 12,
+    name: "Paneer Puff",
+    description: "Flaky pastry with spiced paneer",
+    price: 80,
+    category: "snacks",
+    image: "https://images.unsplash.com/photo-1632203171982-cc0df6e9ceb4?w=400&q=80",
+  },
+  {
+    id: 13,
+    name: "Masala Fries",
+    description: "Crispy fries with Indian spices",
+    price: 100,
+    category: "snacks",
+    image: "https://images.unsplash.com/photo-1630384060421-cb20d0e0649d?w=400&q=80",
+  },
+  {
+    id: 14,
+    name: "Garlic Bread",
+    description: "Toasted bread with garlic butter",
+    price: 90,
+    category: "snacks",
+    image: "https://images.unsplash.com/photo-1573140401552-3fab0b24306f?w=400&q=80",
+  },
+  {
+    id: 15,
+    name: "Veg Burger",
+    description: "House-made patty with fresh toppings",
+    price: 150,
+    category: "snacks",
+    image: "https://images.unsplash.com/photo-1568901346375-23c9450c58cd?w=400&q=80",
+  },
+
+  // ============ DESSERTS ============
+  {
+    id: 16,
+    name: "Chocolate Brownie",
+    description: "Warm, fudgy, served with ice cream",
+    price: 140,
+    category: "desserts",
+    image: "https://images.unsplash.com/photo-1564355808539-22fda35bed7e?w=400&q=80",
+  },
+  {
+    id: 17,
+    name: "Cheesecake",
+    description: "Creamy New York style",
+    price: 180,
+    category: "desserts",
+    image: "https://images.unsplash.com/photo-1524351199678-941a58a3df50?w=400&q=80",
+  },
+  {
+    id: 18,
+    name: "Tiramisu",
+    description: "Classic Italian coffee dessert",
+    price: 200,
+    category: "desserts",
+    image: "https://images.unsplash.com/photo-1571877227200-a0d98ea607e9?w=400&q=80",
+  },
+  {
+    id: 19,
+    name: "Gulab Jamun",
+    description: "Traditional Indian sweet",
+    price: 80,
+    category: "desserts",
+    image: "https://images.unsplash.com/photo-1627308595229-7830a5c91f9f?w=400&q=80",
+  },
+];
+
+export const categories: string[] = [
+  "all",
+  "coffee",
+  "tea",
+  "snacks",
+  "desserts",
+];

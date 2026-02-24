@@ -1,0 +1,113 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Google Fonts Import (fallback for environments where next/font isn't available) */
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&family=Inter:wght@300;400;500;600&display=swap");
+
+/* ========================================
+   CSS Custom Properties
+   ======================================== */
+:root {
+  --primary: #d4a574;
+  --secondary: #2c1810;
+  --accent: #f5e6d3;
+  --background: #fffbf7;
+  --text-dark: #1a0f0a;
+  --text-muted: #6b5b4e;
+  --whatsapp: #25d366;
+}
+
+/* ========================================
+   Base Styles
+   ======================================== */
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 80px;
+  }
+
+  body {
+    font-family: "Inter", var(--font-body), sans-serif;
+    background-color: var(--background);
+    color: var(--text-dark);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    overflow-x: hidden;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-family: "Playfair Display", var(--font-heading), serif;
+  }
+
+  /* Focus styles for accessibility */
+  *:focus-visible {
+    outline: 2px solid var(--primary);
+    outline-offset: 2px;
+    border-radius: 4px;
+  }
+}
+
+/* ========================================
+   Utility Classes
+   ======================================== */
+@layer utilities {
+  .section-padding {
+    @apply py-12 px-4 md:py-16 md:px-6 lg:py-20 lg:px-8;
+  }
+
+  .container-custom {
+    @apply mx-auto max-w-7xl px-4 md:px-6 lg:px-8;
+  }
+}
+
+/* ========================================
+   Custom Scrollbar
+   ======================================== */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--accent);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--primary);
+  border-radius: 9999px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #c49564;
+}
+
+/* Firefox scrollbar */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: var(--primary) var(--accent);
+}
+
+/* ========================================
+   Selection Color
+   ======================================== */
+::selection {
+  background-color: var(--primary);
+  color: #ffffff;
+}
+
+::-moz-selection {
+  background-color: var(--primary);
+  color: #ffffff;
+}
+
+/* ========================================
+   Smooth Image Loading
+   ======================================== */
+img {
+  transition: opacity 0.3s ease;
+}
